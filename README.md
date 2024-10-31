@@ -1,15 +1,18 @@
 # Backend-Quant-Developer-Coding-Task
 Determining the timestamp when the cumulative traded volume within a rolling 60-minute window first exceeds the stock’s 30-day average volume
+
 Task Description 
 You	are	provided	with	three	files:	
 1.	Day	Data	File	containing	aggregated	daily	data,	with	columns:	-	date:	Date	of	the	trading	day.	-	stock_name:	Name	of	the	stock.	-	volume:	Total	volume	traded	for	that	stock	on	that	day.	
 2.	Intraday	Second-by-Second	Data	Files	for	19th	April	2024	and	22nd	April	2024,	each	
 containing	second-by-second	trading	data,	with	columns:	-	date:	Date	of	the	trading	day.	-	timestamp:	Timestamp	for	each	second	of	the	trading	day.	-	stock_name:	Name	of	the	stock.	-	last_traded_quantity:	Quantity	of	the	stock	traded	in	that	specific	second.	
+
 Objective 
 For	each	stock	on	19th	April	2024	and	22nd	April	2024,	determine	the	timestamp	when	the	
 cumulative	traded	volume	within	a	rolling	60-minute	window	first	exceeds	the	stock’s	30-day	
 average	volume.	This	30-day	average	is	calculated	from	the	30	trading	days	preceding	the	
 trading	day.	If	no	crossover	occurs	during	the	day,	the	output	for	that	stock	should	be	None.	
+
 Requirements 
 1.	30-Day	Average	Calculation:	Compute	the	30-day	average	volume	for	each	stock	for	the	
 trading	days	19th	April	2024	and	22nd	April	2024	
